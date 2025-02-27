@@ -1,0 +1,18 @@
+html{
+    cursor: url('cursor.png'), auto;   
+} /*This changes what the cursor looks like*/
+
+header{
+    margin:0;
+} /*margin fixer*/
+
+svg{
+    position: absolute;
+    top: 0px; left: 0px; /*controls the SVG location*/
+} 
+
+#logo {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
