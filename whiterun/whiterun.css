@@ -24,33 +24,50 @@ header {
 
 p {
     font-family: 'Futura';
+    padding-left: 2%;
+    padding-right: 2%;
+    text-indent: 20px;
+    font-size: large;
 }
 
 h1 {
-    font-family: 'Futura', Courier New, Courier, monospace;
+    font-family: 'Futura', 'Courier New', Courier, monospace;
     position: relative;
     text-decoration: underline;
     text-align: center;
 }
 
+li {
+    font-family: 'futura';
+    font-size:medium;
+    line-height: 1.9lh;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0px;
     grid-template-areas:
-        "Head Head Head Head"
-        "Left Left Mans Mans"
-        "Left Left Mans Mans"
-        "Left Left Nazeem Help";
+        "head head head head"
+        "left left sub sub"
+        "left left sub sub"
+        "left left misc help";
 }
-
 
 body {
     background-image: url("../images/backgroundmap.png");
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-left: 20%;
+    padding-right: 20%;
 }
+
+div {
+    border: 5px;
+    border-color: white;
+    border-style: solid;}
 
 #container {
     position: absolute;
@@ -63,65 +80,74 @@ body {
     grid-area: help;
 }
 
-.li {
-    font-size: larger;
-}
-
 .header {
-    max-height: 50%;
     max-width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, .75);
     font-size: larger;
-    margin: auto;
-    grid-area: Head;
+    grid-area: head;
 }
 
 .article {
-    grid-area: Left;
+    grid-area: left;
     background-color: rgba(0, 0, 0, .75);
     position: relative;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    line-height: 1.5lh;
 }
 
-.artcle img{
-    position: relative;
-    display: screen;
-    object-fit: contain;
 
-}
-
-.Nazeem {
+.misc {
     background-color: rgba(0, 0, 0, .75);
     text-align: center;
-    font-size: larger;
-    margin-top: -3.5%;
-    position: relative;
-    grid-area: Nazeem;
+    font-size: medium;
+    grid-area: misc;
 }
 
-.Nazeem img {
+.misc h1{
+    background-color: rgba(0, 0, 0, .75);
+    margin:auto;
 }
 
-.Classifieds {
-    grid-area: Classifieds;
-
+.classifieds {
+    grid-area: help;
     background-color: rgba(0, 0, 0, .75);
 }
 
-.Mansion {
+.classifieds h1{
+    background-color: rgba(0, 0, 0, .75);
+    margin:auto;
+}
+
+.sub {
     background-color: rgba(0, 0, 0, .75);
     text-align: left;
     line-height: 1.5em;
-    max-width: 35vw;
-    max-height: 100vh;
-    margin: 30% 30%;
-    grid-area: Mans;
-    position: relative;
+    grid-area: sub;
 }
 
+img {
+    width: 100%;
+}
 
+.exit {
+    position: fixed;
+    top:3%;
+    right:3%;
+    max-width: 4%;
+}
 
-.img {
+@media (max-width: 1451px){
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 0px;
+        grid-template-areas:
+            "head head "
+            "left left"
+            "sub sub"
+            "misc help";
+    }   
 }

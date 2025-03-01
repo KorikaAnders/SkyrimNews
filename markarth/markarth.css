@@ -1,0 +1,157 @@
+html {
+    color: white;
+    cursor: url('../cursor.png'), auto;
+}
+
+/*This changes what the cursor looks like*/
+
+header {
+    margin: 0;
+}
+
+/*margin fixer*/
+
+@font-face {
+    font-family: Futura;
+    src: url('../fonts/futura.otf');
+}
+
+@font-face {
+    font-family: Viner ITC;
+    src: url('../fonts/VINER-ITC.TTF');
+}
+
+
+p {
+    font-family: 'Futura';
+    padding-left: 2%;
+    padding-right: 2%;
+    text-indent: 20px;
+    font-size: large;
+}
+
+.tiny {
+    font-size:x-small;
+}
+
+h1 {
+    font-family: 'Futura', 'Courier New', Courier, monospace;
+    position: relative;
+    text-decoration: underline;
+    text-align: center;
+}
+
+li {
+    font-family: 'futura';
+    font-size:medium;
+    line-height: 1.9lh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0px;
+    grid-template-areas:
+        "head head head head"
+        "left left sub sub"
+        "left left sub sub"
+        "left left misc help";
+}
+
+body {
+    background-image: url("../images/backgroundmap.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div {
+    border: 5px;
+    border-color: white;
+    border-style: solid;}
+
+#container {
+    position: absolute;
+    display: screen;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.help {
+    grid-area: help;
+}
+
+.header {
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .75);
+    font-size: larger;
+    grid-area: head;
+}
+
+.article {
+    grid-area: left;
+    background-color: rgba(0, 0, 0, .75);
+    position: relative;
+    text-overflow: ellipsis;
+    line-height: 1.5lh;
+}
+
+
+.misc {
+    background-color: rgba(0, 0, 0, .75);
+    text-align: center;
+    font-size: medium;
+    grid-area: misc;
+}
+
+.misc h1{
+    background-color: rgba(0, 0, 0, .75);
+    margin:auto;
+}
+
+.classifieds {
+    grid-area: help;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.classifieds h1{
+    background-color: rgba(0, 0, 0, .75);
+    margin:auto;
+}
+
+.sub {
+    background-color: rgba(0, 0, 0, .75);
+    text-align: left;
+    line-height: 1.5em;
+    grid-area: sub;
+}
+
+img {
+    width: 100%;
+}
+
+.exit {
+    position: fixed;
+    top:3%;
+    right:3%;
+    max-width: 4%;
+}
+
+@media (max-width: 1451px){
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 0px;
+        grid-template-areas:
+            "head head "
+            "left left"
+            "sub sub"
+            "misc help";
+    }   
+}
