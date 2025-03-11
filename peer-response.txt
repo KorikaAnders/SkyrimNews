@@ -1,0 +1,17 @@
+I was a little confused at first about how to return to the main page besides clicking the back arrow. It took me a second to realize the Dragonborn symbol was the back button! Maybe making that clearer would help, since navigation links should be easily recognizable (as the homepage design guidelines suggest).
+
+On the homepage, depending on screen size, there’s a lot of empty black space at the bottom. That space could either be removed or used for something else to make the page more visually engaging! Since the homepage should really sell the idea of the website, you might be able to make better use of that area—maybe by adjusting the map’s scaling so it fits better on full-screen without needing to scroll
+
+ -Seth Moore
+
+It may be beneficial to consider a media query for screen widths below 750px to transition to a single-column layout on the town news pages, with the 'misc' section positioned below the 'help' section, or vice versa. -Matt Frix
+
+Reuse CSS Sheets when able -Prof. Handley
+
+
+With a bit of finagglign I got the screen scaling working.
+I wasn't able to properly clear out the blank space at the bottom without breaking the svg
+but I did add an easter egg instead to make it not blank white space.
+I also edited the skyrim logo to have the word Return on it, which should help a bit without
+betraying the non-traditional website format.
+and finally I cleared out and relinked everything to a single news.css stylesheet.

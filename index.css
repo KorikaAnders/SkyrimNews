@@ -1,6 +1,19 @@
 html{
     cursor: url('cursor.png'), auto;   
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size:cover;
 } /*This changes what the cursor looks like*/
+
+#beacon{
+    max-width: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20%;
+}
+
 
 header{
     margin:0;
@@ -8,6 +21,7 @@ header{
 
 svg{
     position: absolute;
+    z-index: 2;
     top: 0px; left: 0px; /*controls the SVG location*/
 } 
 
