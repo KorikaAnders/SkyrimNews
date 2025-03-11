@@ -14,7 +14,6 @@ html{
     right: 20%;
 }
 
-
 header{
     margin:0;
 } /*margin fixer*/
@@ -29,4 +28,5 @@ svg{
     position: absolute;
     top:0px;
     left:0px;
+    z-index: 3;
 }

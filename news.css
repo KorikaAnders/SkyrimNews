@@ -56,7 +56,7 @@ main {
 }
 
 body {
-    background-image: url("../images/backgroundmap.png");
+    background-image: url("/images/backgroundmap.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
