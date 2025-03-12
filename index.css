@@ -29,4 +29,20 @@ svg{
     top:0px;
     left:0px;
     z-index: 3;
+    max-width: 45vh;
+}
+
+@media (max-width: 1451px){
+
+   #logo {
+    max-width: 45vh;
+   }
+}
+
+@media (max-width:750px){
+
+    #logo {
+        max-width: 20vh;
+    }
+    
 }
