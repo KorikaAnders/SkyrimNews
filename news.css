@@ -1,6 +1,6 @@
 html {
     color: white;
-    cursor: url('../cursor.png'), auto;
+    cursor: url('..\cursor.png'), auto;
 }
 
 /*This changes what the cursor looks like*/
@@ -13,12 +13,12 @@ header {
 
 @font-face {
     font-family: Futura;
-    src: url('../fonts/futura.otf');
+    src: url('..\fonts\futura.otf');
 }
 
 @font-face {
     font-family: Viner ITC;
-    src: url('../fonts/VINER-ITC.TTF');
+    src: url('..\fonts\VINER-ITC.TTF');
 }
 
 
@@ -56,7 +56,7 @@ main {
 }
 
 body {
-    background-image: url("../images/backgroundmap.png");
+    background-image: url("..\images\backgroundmap.png");
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
