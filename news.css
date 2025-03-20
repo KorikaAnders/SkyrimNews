@@ -14,28 +14,28 @@ header {
 @font-face {
     font-family: Futura;
     src: url('fonts/futura.otf');
-}
+} /*adds the custom font to the website, originally was 2 but cut down to one because it was just too busy*/
 
 p {
-    font-family: 'Futura';
+    font-family: 'Futura', 'Courier New', Courier, monospace;
     padding-left: 2%;
     padding-right: 2%;
     text-indent: 20px;
     font-size: large;
-}
+} /*Tells the browser to use the font for the text*/
 
 h1 {
     font-family: 'Futura', 'Courier New', Courier, monospace;
     position: relative;
     text-decoration: underline;
     text-align: center;
-}
+} /*Tells the browser to use the font for the text*/
 
 li {
-    font-family: 'futura';
+    font-family: 'Futura', 'Courier New', Courier, monospace;
     font-size:medium;
     line-height: 1.9lh;
-}
+} /*Tells the browser to use the font for the text*/
 
 main {
     display: grid;
@@ -47,7 +47,7 @@ main {
         "left left sub sub"
         "left left sub sub"
         "left left misc help";
-}
+} /*primary grid template for the site*/
 
 body {
     background-image: url("images/backgroundmap.png");
@@ -56,23 +56,16 @@ body {
     background-size: cover;
     padding-left: 20%;
     padding-right: 20%;
-}
+} /*here's the background image for the website*/
 
 div {
     border: 5px;
     border-color: white;
-    border-style: solid;}
-
-#container {
-    position: absolute;
-    display: screen;
-    margin: auto;
-    background-color: rgba(0, 0, 0, .75);
-}
+    border-style: solid;} /*this sets up the white borders separating the various articles*/
 
 .help {
     grid-area: help;
-}
+} /*grid area for the help section*/
 
 .header {
     max-width: 100%;
@@ -80,7 +73,7 @@ div {
     background-color: rgba(0, 0, 0, .75);
     font-size: larger;
     grid-area: head;
-}
+} /*grid area for the main heading*/
 
 .article {
     grid-area: left;
@@ -88,7 +81,7 @@ div {
     position: relative;
     text-overflow: ellipsis;
     line-height: 1.5lh;
-}
+} /*grid area for the main article*/
 
 
 .misc {
@@ -96,12 +89,12 @@ div {
     text-align: center;
     font-size: medium;
     grid-area: misc;
-}
+} /*grid area for the misc section*/
 
 .misc h1{
     background-color: rgba(0, 0, 0, .75);
     margin:auto;
-}
+} /*the following few sections set opactiies for the header text*/
 
 .classifieds {
     grid-area: help;
@@ -118,18 +111,18 @@ div {
     text-align: left;
     line-height: 1.5em;
     grid-area: sub;
-}
+} /*thing for the sub article*/
 
 img {
     width: 100%;
-}
+} /*setting image sizes*/
 
 .exit {
     position: fixed;
     top:3%;
     right:3%;
     max-width: 4%;
-}
+} /*setting up where the return button is*/
 
 @media (max-width: 1451px){
 
@@ -145,7 +138,7 @@ img {
             "misc help";
     }   
 }
-
+/*the media*/
 @media (max-width:750px){
 
     main{
