@@ -12,7 +12,7 @@ html{
     position: fixed;
     bottom: 20px;
     right: 20%;
-}
+} /*This controls where the hidden beacon easter egg is placed*/
 
 header{
     margin:0;
@@ -30,7 +30,7 @@ svg{
     left:0px;
     z-index: 3;
     max-width: 45vh;
-}
+} /*Logo time*/
 
 @media (max-width: 1451px){
 
