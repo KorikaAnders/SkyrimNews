@@ -16,12 +16,6 @@ header {
     src: url('fonts/futura.otf');
 }
 
-@font-face {
-    font-family: Viner ITC;
-    src: url('fonts/VINER-ITC.TTF');
-}
-
-
 p {
     font-family: 'Futura';
     padding-left: 2%;
