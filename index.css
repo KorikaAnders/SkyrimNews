@@ -1,5 +1,5 @@
 html{
-    cursor: url('images\cursor.png'), auto;   
+    cursor: url('images/cursor.png'), auto;   
     background-image:url(background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
